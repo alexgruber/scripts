@@ -4,8 +4,10 @@
 # Download and install miniconda
 #    wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
 #    bash miniconda.sh -b -p $HOME/miniconda
-#	 rm -f miniconda.sh
+#	   rm -f miniconda.sh
 #    export PATH="$HOME/miniconda/bin:$PATH" (or add to .bashrc)
+#
+#    conda config --add channels conda-forge
 #
 # Download and install pycharm:
 #    wget https://download.jetbrains.com/python/pycharm-community-2017.3.4.tar.gz -O pycharm.tar.gz
