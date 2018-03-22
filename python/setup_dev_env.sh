@@ -10,7 +10,7 @@
 #    conda config --add channels conda-forge
 #
 # Download and install pycharm:
-#    wget https://download.jetbrains.com/python/pycharm-community-2017.3.4.tar.gz -O pycharm.tar.gz
+#    wget http://download.jetbrains.com/python/pycharm-community-2017.3.4.tar.gz -O pycharm.tar.gz
 #    tar -xzf pycharm.tar.gz
 #    rm -f pycharm.tar.gz
 #    export PATH="$HOME/pycharm/bin:$PATH" (or add to .bashrc)
