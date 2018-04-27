@@ -18,6 +18,7 @@
 # Install and configure git:
 #    git config --global user.name "Alexander Gruber"
 #    git config --global user.email reddy.gruber@icloud.com
+#    git config --global core.excludesfile ~/.gitignore_global (add *.pyc !!!)
 #
 # Setup the GitHub SSH keys
 #
