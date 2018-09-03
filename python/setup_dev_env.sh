@@ -19,6 +19,7 @@
 #    git config --global user.name "Alexander Gruber"
 #    git config --global user.email reddy.gruber@icloud.com
 #    git config --global core.excludesfile ~/.gitignore_global (add *.pyc !!!)
+#        # .pyc files must be untracked to be ignored! if not, use git rm -f filename.pyc
 #
 # Setup the GitHub SSH keys
 #
