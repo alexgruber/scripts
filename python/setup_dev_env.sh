@@ -31,6 +31,10 @@ cd ~/python
 conda create -y -n dev xarray netCDF4 scipy matplotlib basemap nco
 activate dev
 
+conda install cartopy
+pip install ismn
+# When using the ISMN package on Unix, the TkAgg backend has to be activated in ismn.interface
+
 pip install pynetcf
 git clone git@github.com:alexgruber/pytesmo.git
 cd pytesmo
