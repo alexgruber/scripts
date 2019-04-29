@@ -2,7 +2,7 @@
 # Eventual prerequisits:
 #
 # Download and install miniconda
-#    wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
+#    wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 #    bash miniconda.sh -b -p $HOME/miniconda
 #	   rm -f miniconda.sh
 #    export PATH="$HOME/miniconda/bin:$PATH" (or add to .bashrc)
@@ -27,19 +27,12 @@
 #
 # ---------------------------------------------------------------
 
-
-I:
-cd python
-conda create -y -n dev pandas scipy matplotlib basemap netCDF4 xarray 
+cd ~/python
+conda create -y -n dev xarray netCDF4 scipy matplotlib basemap 
 activate dev
 
-pip install pyscaffold==v2.5.8
-pip install multiprocessing
 pip install pynetcf
-pip install ease-grid
-
 git clone git@github.com:alexgruber/pytesmo.git
 cd pytesmo
 python setup.py develop
-
 
