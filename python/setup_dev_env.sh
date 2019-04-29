@@ -28,7 +28,7 @@
 # ---------------------------------------------------------------
 
 cd ~/python
-conda create -y -n dev xarray netCDF4 scipy matplotlib basemap 
+conda create -y -n dev xarray netCDF4 scipy matplotlib basemap nco
 activate dev
 
 pip install pynetcf
