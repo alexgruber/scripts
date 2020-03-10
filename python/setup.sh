@@ -1,9 +1,7 @@
 
-
 # --------------------------------------------------------------------------------------------------------
 # !!! ON THE HPC, MINICONDA AND PYCHARM SHOULD BE INSTALLED ON $VSC_DATA DUE TO LIMITED SPACE ON $HOME !!!
 # --------------------------------------------------------------------------------------------------------
-
 
 # ------------------------------------------------------------------------------------------
 # Download and install miniconda:
@@ -17,8 +15,21 @@ export PATH="$HOME/miniconda/bin:$PATH"
 # Add the conda-forge channel for package downloads:
 conda config --add channels conda-forge
 
+# On Windows, a C++ compiler might have to be installed before the next step
+# http://aka.ms/vcpython27
+
 # Install most important packages
 conda install pandas scipy matplotlib basemap netCDF4 xarray
+
+# Optional useful packages depending on the purpose of the installation:
+# pip install pyscaffold==v2.5.8
+# pip install pynetcf
+# pip install ease-grid
+
+# Requires GIT setup first (see below):
+# git clone git@github.com:alexgruber/pytesmo.git
+# cd pytesmo
+# python setup.py develop
 
 
 # ------------------------------------------------------------------------------------------
